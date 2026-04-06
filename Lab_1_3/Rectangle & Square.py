@@ -28,7 +28,6 @@ class Rectangle:
 
 class Square(Rectangle):
     def __init__(self, size):
-        # Kutsume ülemklassi konstruktorit, kus laius ja kõrgus on samad
         super().__init__(size, size)
 
     @Rectangle.width.setter
@@ -49,8 +48,6 @@ def use_shape(shape):
     print(f"Expected area: {expected}")
     print(f"Actual area: {shape.area()}\n")
 
-
-# Testimine
 r = Rectangle(2, 3)
 use_shape(r)
 

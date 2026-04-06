@@ -1,6 +1,5 @@
 from abc import ABC, abstractmethod
 
-# Ühine baasklass kõigele, millel on pindala
 class Shape(ABC):
     @property
     @abstractmethod
@@ -30,12 +29,10 @@ class Square(Shape):
     def __str__(self):
         return f"Square (Side: {self.size})"
 
-# Nüüd on meil universaalne funktsioon, mis töötab iga kujundiga
 def print_shape_info(shape: Shape):
     print(shape)
     print(f"Area: {shape.area}\n")
 
-# Testimine
 if __name__ == "__main__":
     r = Rectangle(2, 3)
     s = Square(5)
